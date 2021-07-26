@@ -1,13 +1,13 @@
 import React from 'react'
-import CountButton from  './CountButton'
+import CountButton from  '../styles/CountButton/CountButton'
 
 const App = () => {
-    const myItem = "mike"
+    
     
       return (
       <div> 
-        <CountButton  />
-        <CountButton />
+        <CountButton  incrementBy={1} buttonColor={'blue'}  />
+        <CountButton  incrementBy={5} buttonColor={'yellow'} />
       </div>
       )
     }
